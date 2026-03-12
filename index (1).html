@@ -25,6 +25,15 @@
   async
   defer
 ></script>
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "vucm8xmwsq");
+</script>
 <style>
   :root {
     --bg:        #0D0F0E;
@@ -1280,69 +1289,15 @@
     text-transform: uppercase;
     color: #0D0F0E;
   }
-  .popup-body { padding: 24px 24px 20px; }
-  .popup-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: rgba(240,192,96,0.1);
-    border: 1px solid rgba(240,192,96,0.3);
-    color: var(--amber);
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    padding: 4px 12px;
-    border-radius: 999px;
-    margin-bottom: 14px;
-  }
+  .popup-body { padding: 22px 22px 18px; }
   .popup-title {
-    font-size: clamp(18px, 4.5vw, 22px);
+    font-size: clamp(17px, 4.5vw, 21px);
     font-weight: 900;
     color: var(--white);
     line-height: 1.25;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
   .popup-title span { color: var(--gold2); }
-  .popup-subtitle {
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--muted2);
-    line-height: 1.65;
-    margin-bottom: 18px;
-  }
-  .popup-price-row {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    background: var(--surface);
-    border: 1px solid var(--border2);
-    border-radius: 12px;
-    padding: 12px 16px;
-    margin-bottom: 18px;
-  }
-  .popup-price-old {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--muted);
-    text-decoration: line-through;
-  }
-  .popup-price-arrow { font-size: 14px; color: var(--muted); }
-  .popup-price-new {
-    font-size: 22px;
-    font-weight: 900;
-    color: var(--gold2);
-    line-height: 1;
-  }
-  .popup-price-new sup { font-size: 12px; font-weight: 700; vertical-align: super; }
-  .popup-price-label {
-    font-size: 11px;
-    font-weight: 600;
-    color: var(--muted);
-    margin-left: auto;
-    text-align: right;
-    line-height: 1.4;
-  }
   .popup-feats {
     list-style: none;
     display: grid;
@@ -1727,7 +1682,7 @@
             <li class="plan-feat plan-feat--bonus"><span class="fc bonus-fc">🎁</span> <span class="bonus-lbl">Bônus: Manual do Iniciante</span></li>
             <li class="plan-feat plan-feat--bonus"><span class="fc bonus-fc">🎁</span> <span class="bonus-lbl">Bônus: Como Ganhar $ com Marcenaria</span></li>
           </ul>
-          <button class="plan-cta gold" onclick="window.location.href='https://www.ggcheckout.com/checkout/v5/Bg3o4qxMRHwKYns4hczR'">QUERO O PREMIUM AGORA →</button>
+          <button class="plan-cta gold" onclick="location.replace('https://www.ggcheckout.com/checkout/v5/Bg3o4qxMRHwKYns4hczR')">QUERO O PREMIUM AGORA →</button>
         </div>
       </div>
     </div>
@@ -1941,45 +1896,25 @@
 <!-- UPGRADE POPUP -->
 <div class="popup-overlay" id="upgradePopup">
   <div class="popup-box">
-    <div class="popup-top-bar">🔒 Oferta exclusiva — aparece apenas uma vez</div>
+    <div class="popup-top-bar">⚡ Oferta exclusiva — apenas uma vez</div>
     <button class="popup-close" onclick="declineUpgrade()" aria-label="Fechar">✕</button>
     <div class="popup-body">
-      <div class="popup-badge">⚡ Espere!</div>
-      <h3 class="popup-title">Antes de finalizar sua compra…<br><span>Desbloqueie o Premium por apenas R$17 a mais</span></h3>
-      <p class="popup-subtitle">Aproveite esta oferta exclusiva que aparece apenas uma vez. Por apenas R$17 a mais, você acessa conteúdos extras que não estão incluídos no Plano Básico.</p>
 
-      <div class="popup-price-row">
-        <div>
-          <div class="popup-price-old">Plano Básico: R$10</div>
-          <div style="font-size:11px;color:var(--muted);margin-top:2px;">+ R$17 de upgrade</div>
-        </div>
-        <div class="popup-price-arrow">→</div>
-        <div>
-          <div class="popup-price-new"><sup>R$</sup>27</div>
-        </div>
-        <div class="popup-price-label">Plano Premium<br>Acesso vitalício</div>
-      </div>
+      <h3 class="popup-title">Upgrade para o <span>Plano Premium</span><br>por apenas <span>R$17</span></h3>
 
       <ul class="popup-feats">
-        <li class="popup-feat"><div class="pfc">✓</div>Projetos exclusivos profissionais</li>
-        <li class="popup-feat"><div class="pfc">✓</div>Conteúdos extras de marcenaria</li>
-        <li class="popup-feat"><div class="pfc">✓</div>Materiais adicionais de construção</li>
-        <li class="popup-feat"><div class="pfc">✓</div>Atualizações futuras incluídas</li>
         <li class="popup-feat"><div class="pfc">✓</div>Área de membros exclusiva</li>
         <li class="popup-feat"><div class="pfc">✓</div>Tutoriais em vídeo + Grupo VIP</li>
+        <li class="popup-feat"><div class="pfc">✓</div>Projetos profissionais extras</li>
+        <li class="popup-feat"><div class="pfc">✓</div>Atualizações futuras incluídas</li>
       </ul>
 
       <button class="popup-cta-main" onclick="acceptUpgrade()">
-        SIM! QUERO DESBLOQUEAR O PLANO PREMIUM
-        <span class="popup-cta-sub">Adicionar upgrade por apenas R$17</span>
+        SIM! QUERO O PREMIUM POR R$17
+        <span class="popup-cta-sub">Oferta exclusiva · acesso vitalício</span>
       </button>
-      <button class="popup-cta-decline" onclick="declineUpgrade()">Não, quero continuar apenas com o plano básico</button>
+      <button class="popup-cta-decline" onclick="declineUpgrade()">Não, quero só o básico por R$10</button>
 
-      <div class="popup-trust">
-        <div class="popup-trust-item"><span>✓</span> Acesso imediato</div>
-        <div class="popup-trust-item"><span>✓</span> Atualizações inclusas</div>
-        <div class="popup-trust-item"><span>✓</span> Oferta só nesta página</div>
-      </div>
     </div>
   </div>
 </div>
@@ -2022,14 +1957,14 @@
     popupShown = true;
     upgradePopup.classList.remove('open');
     document.body.style.overflow = '';
-    window.location.href = 'https://www.ggcheckout.com/checkout/v5/sQDkryulSeIUFa1wGhJM';
+    location.replace('https://www.ggcheckout.com/checkout/v5/sQDkryulSeIUFa1wGhJM');
   }
 
   function declineUpgrade() {
     popupShown = true;
     upgradePopup.classList.remove('open');
     document.body.style.overflow = '';
-    window.location.href = 'https://www.ggcheckout.com/checkout/v5/gJbupQzin2N8dzGGD7m7';
+    location.replace('https://www.ggcheckout.com/checkout/v5/gJbupQzin2N8dzGGD7m7');
   }
 
   // Close on overlay click (outside box)
